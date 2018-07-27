@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hindi Handwritten Characters Recognition</title>
+
+    <!-- jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: whitesmoke">
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-text">
+                Hindi Handwritten Characters Recognition
+            </span>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 35px;">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- character drawing canvas -->
+                <canvas id="draw" height="250" width="250" style="border: 1px solid lightgrey;"></canvas>
+                
+                <small class="form-text text-muted" style="margin-top: 10px;">
+                    Enter the character above and hit predict button below.
+                </small>
+
+                <button id="predict" class="btn btn-primary" style="margin-top: 15px;">Predict</button>
+            </div>
+
+            <div class="col-md-8">
+                <h4>Predictions</h4>
+                <hr>
+                <!-- predictions chart -->
+                <canvas id="prediction_chart"></canvas>
+            </div>
+        </div>  
+    </div>
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <!-- fabric.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.3.3/fabric.min.js"></script>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+    <!-- main.js script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
