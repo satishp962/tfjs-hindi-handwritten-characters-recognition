@@ -8,6 +8,7 @@ To view dataset see my [Hindi Handwritten Characters Recognition using Keras and
 
 The trained model of this repo is converted into Tensorflow.js format using the TFJS converter. The folder model contains the converted files.
 
+See the browser's developer console for information and errors.
 
 ### Screenshot
 ![enter image description here](https://raw.githubusercontent.com/satishp962/tfjs-hindi-handwritten-characters-recognition/master/screenshot_output.PNG)		
