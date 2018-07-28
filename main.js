@@ -19,14 +19,14 @@ tf.loadModel("model/model.json").then(model => {
         function predict() {
             
             // get image from canvas
-            let image = context.getImageData(0, 0, 200, 200);
+            let image = context.getImageData(0, 0, 250, 250);
 
             // create a new canvas and copy the image from drawing canvas
             let new_canvas = document.createElement('canvas');
 
             // canvas dimensions
-            new_canvas.height = 200;
-            new_canvas.width = 200;
+            new_canvas.height = 250;
+            new_canvas.width = 250;
             new_canvas.getContext('2d').putImageData(image, 0, 0);
 
             // new resized canvas 28x28
